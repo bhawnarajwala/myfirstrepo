@@ -8,7 +8,7 @@ pipeline{
 }
 stage('stage2'){
   steps{
-    sh 'echo "completed"'
+    sh 'aws s3 cp code/a.py s3://bhawna6451/'
   }
 }
   }
